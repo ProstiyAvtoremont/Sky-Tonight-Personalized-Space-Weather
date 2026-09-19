@@ -1,0 +1,15 @@
+{
+  "date": "placeholder",
+  "image_url": "",
+  "media_type": "image",
+  "source_url": "",
+  "credit": null,
+  "title": {
+    "en": "Today's picture is on its way",
+    "ua": "Сьогоднішнє зображення вже в дорозі"
+  },
+  "explanation": {
+    "en": "This panel updates automatically once a day with NASA's Astronomy Picture of the Day. Run the \"Daily content refresh\" workflow once from the Actions tab to load the first one.",
+    "ua": "Ця панель оновлюється автоматично раз на день зображенням дня від NASA. Запустіть workflow «Daily content refresh» у вкладці Actions один раз, щоб завантажити перше зображення."
+  }
+}
