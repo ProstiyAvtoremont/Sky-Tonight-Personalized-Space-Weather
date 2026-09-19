@@ -44,6 +44,12 @@
     document.documentElement.lang = dict.__lang === "ua" ? "uk" : "en";
   }
 
+  function applyLangBlocks(lang) {
+    document.querySelectorAll("[data-lang-block]").forEach((el) => {
+      el.style.display = el.getAttribute("data-lang-block") === lang ? "" : "none";
+    });
+  }
+
   function setActiveButtons(lang) {
     document.querySelectorAll(".lang-toggle button").forEach((btn) => {
       btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
@@ -57,6 +63,7 @@
       const dict = await loadDict(lang);
       dict.__lang = lang;
       applyDict(dict);
+      applyLangBlocks(lang);
       setActiveButtons(lang);
       window.__gsDict = dict;
       document.dispatchEvent(new CustomEvent("gs:lang-changed", { detail: { lang, dict } }));
