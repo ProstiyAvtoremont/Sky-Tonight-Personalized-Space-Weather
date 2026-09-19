@@ -360,6 +360,223 @@ section { padding: 56px 0; }
 @media (max-width: 600px) { .blog-row { grid-template-columns: 1fr; } }
 .blog-row .date { color: var(--text-faint); font-size: 0.85rem; padding-top: 4px; }
 
+/* ---------- NASA picture of the day ---------- */
+.apod-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+@media (max-width: 800px) { .apod-panel { grid-template-columns: 1fr; } }
+#apod-image {
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #0e1430;
+}
+#apod-title { margin-bottom: 8px; }
+#apod-text { font-size: 0.92rem; }
+#apod-credit { font-size: 0.78rem; color: var(--text-faint); margin: 8px 0 0; }
+#apod-link { font-size: 0.82rem; }
+
+/* ---------- geomagnetic / "how today might feel" ---------- */
+.geo-panel {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px 26px;
+}
+.geo-panel-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.geo-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+}
+.geo-badge-low { border-color: rgba(126, 200, 227, 0.4); color: var(--accent-2); }
+.geo-badge-moderate { border-color: rgba(255, 209, 102, 0.4); color: var(--accent); }
+.geo-badge-high { border-color: rgba(255, 138, 122, 0.45); color: var(--danger); }
+.geo-kp { font-family: var(--serif); color: var(--text-faint); font-size: 0.9rem; }
+.geo-disclaimer { font-size: 0.78rem; color: var(--text-faint); margin: 10px 0 0; }
+
+/* ---------- daily tarot card ---------- */
+.tarot-block {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  align-items: center;
+}
+@media (max-width: 700px) { .tarot-block { grid-template-columns: 1fr; justify-items: center; text-align: center; } }
+
+.tarot-card-shell {
+  width: 180px;
+  height: 280px;
+  perspective: 1200px;
+  flex-shrink: 0;
+}
+.tarot-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-style: preserve-3d;
+}
+#tarot-widget.revealed .tarot-card-inner { transform: rotateY(180deg); }
+
+.tarot-face {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-md);
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  text-align: center;
+  border: 1px solid var(--line);
+}
+.tarot-back {
+  background:
+    repeating-linear-gradient(135deg, rgba(255, 209, 102, 0.08) 0 10px, transparent 10px 20px),
+    linear-gradient(160deg, #1b2348, #0e1430);
+}
+.tarot-back-mark {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, #fff, var(--accent) 40%, var(--accent-dim) 75%);
+  opacity: 0.85;
+}
+.tarot-front {
+  background: linear-gradient(165deg, #232c58, #131a3a);
+  transform: rotateY(180deg);
+  flex-direction: column;
+  gap: 10px;
+}
+.tarot-front h3 { margin: 0; font-size: 1.05rem; }
+.tarot-front p { font-size: 0.82rem; margin: 0; color: var(--text-dim); }
+
+.tarot-copy .btn { margin-top: 14px; }
+#tarot-name { display: block; margin-bottom: 6px; }
+#tarot-meaning { display: none; }
+#tarot-widget.revealed #tarot-meaning { display: block; }
+#tarot-widget.revealed #tarot-reveal { display: none; }
+
+/* ---------- daily horoscope ---------- */
+.sign-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.sign-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.sign-btn .sign-symbol { font-size: 1rem; color: var(--accent-2); }
+.sign-btn.active { background: var(--surface); color: var(--text); border-color: rgba(255, 209, 102, 0.4); }
+
+#horoscope-result {
+  display: none;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+}
+.horoscope-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.horoscope-head h3 { margin: 0; }
+.horoscope-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+@media (max-width: 640px) { .horoscope-categories { grid-template-columns: 1fr; } }
+.horoscope-cat {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+}
+.horoscope-cat span {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: none;
+  color: var(--accent-2);
+  margin-bottom: 5px;
+}
+.horoscope-cat p { margin: 0; font-size: 0.85rem; color: var(--text-dim); }
+.horoscope-meta {
+  display: flex;
+  gap: 22px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.horoscope-meta div { font-size: 0.8rem; color: var(--text-faint); }
+.horoscope-meta strong { display: block; color: var(--text); font-family: var(--serif); font-size: 1rem; font-weight: 600; margin-top: 2px; }
+
+[data-lang-block] { display: none; }
+
+/* ---------- article pages ---------- */
+.breadcrumb {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  margin-bottom: 14px;
+}
+.breadcrumb a { color: var(--text-faint); }
+.article-meta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  margin: 10px 0 28px;
+}
+.article-body h2 {
+  margin-top: 1.7em;
+  font-size: 1.3rem;
+}
+.article-body p { color: var(--text-dim); max-width: 70ch; }
+.article-body ul { color: var(--text-dim); padding-left: 1.2em; max-width: 68ch; }
+.article-body li { margin-bottom: 0.5em; }
+.article-body a { color: var(--accent-2); }
+.related-box {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.related-box h3 { margin-bottom: 14px; }
+.related-list { display: flex; flex-direction: column; gap: 8px; }
+.related-list a { font-size: 0.95rem; }
+
 .empty-state {
   text-align: center;
   padding: 40px 20px;
