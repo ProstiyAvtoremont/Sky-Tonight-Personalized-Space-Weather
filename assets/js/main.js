@@ -35,9 +35,10 @@
     posts.slice(0, 3).forEach((p) => {
       const card = document.createElement("article");
       card.className = "card";
+      const href = p.slug ? `blog/${p.slug}.html` : "blog.html";
       card.innerHTML = `
         <span class="tag">${p.tag[L]}</span>
-        <h3>${p.title[L]}</h3>
+        <h3><a href="${href}" style="color:inherit">${p.title[L]}</a></h3>
         <p>${p.excerpt[L]}</p>
         <span class="meta">${p.date}</span>
       `;
@@ -57,11 +58,12 @@
     posts.forEach((p) => {
       const row = document.createElement("article");
       row.className = "blog-row";
+      const href = p.slug ? `blog/${p.slug}.html` : "#";
       row.innerHTML = `
         <div class="date">${p.date}</div>
         <div>
           <span class="tag">${p.tag[L]}</span>
-          <h3 style="margin-top:8px">${p.title[L]}</h3>
+          <h3 style="margin-top:8px"><a href="${href}" style="color:inherit">${p.title[L]}</a></h3>
           <p>${p.excerpt[L]}</p>
         </div>
       `;
