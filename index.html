@@ -21,6 +21,8 @@
     <ul class="nav-links">
       <li><a href="index.html" data-i18n="nav.home" aria-current="page">Home</a></li>
       <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="index.html#horoscope" data-i18n="nav.horoscope">Horoscope</a></li>
+      <li><a href="index.html#tarot" data-i18n="nav.tarot">Tarot</a></li>
       <li><a href="ads.html" data-i18n="nav.ads">Ads</a></li>
       <li><a href="about.html" data-i18n="nav.about">About</a></li>
       <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
@@ -107,6 +109,104 @@
     </div>
   </section>
 
+  <section class="container" id="apod-section">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="apod.title">Today from space</h2>
+        <p data-i18n="apod.sub">NASA's Astronomy Picture of the Day, refreshed automatically.</p>
+      </div>
+    </div>
+    <div class="apod-panel" id="apod-widget">
+      <img id="apod-image" alt="">
+      <div>
+        <h3 id="apod-title"></h3>
+        <p id="apod-text"></p>
+        <p id="apod-credit"></p>
+        <a id="apod-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n="apod.source_link">View source on NASA APOD</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="tarot">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="tarot.title">Card of the day</h2>
+        <p data-i18n="tarot.sub">One card, drawn for everyone today.</p>
+      </div>
+    </div>
+    <div class="tarot-block" id="tarot-widget">
+      <div class="tarot-card-shell">
+        <div class="tarot-card-inner">
+          <div class="tarot-face tarot-back"><div class="tarot-back-mark" aria-hidden="true"></div></div>
+          <div class="tarot-face tarot-front">
+            <h3 id="tarot-name"></h3>
+            <p id="tarot-meaning"></p>
+          </div>
+        </div>
+      </div>
+      <div class="tarot-copy">
+        <p data-i18n="tarot.note">Want a full reading? See our community readers on the Ads page.</p>
+        <button class="btn btn-primary" id="tarot-reveal" type="button" data-i18n="tarot.reveal_button">Reveal today's card</button>
+        <p style="margin-top:10px"><a href="blog/tarot-cards-explained.html" data-lang-block="en">How tarot cards actually work →</a><a href="blog/tarot-cards-explained.html" data-lang-block="ua">Як насправді працює таро →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="horoscope">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="horoscope.title">Daily horoscope</h2>
+        <p data-i18n="horoscope.sub">Pick your sign for today's reading.</p>
+      </div>
+    </div>
+    <div id="horoscope-widget">
+      <div class="sign-picker" id="horoscope-picker"></div>
+      <div id="horoscope-result">
+        <div class="horoscope-head">
+          <h3 id="horoscope-sign-name"></h3>
+          <span id="horoscope-sign-range"></span>
+        </div>
+        <p id="horoscope-text"></p>
+        <div class="horoscope-categories">
+          <div class="horoscope-cat">
+            <span data-i18n="horoscope.category_love">Love</span>
+            <p id="horoscope-love"></p>
+          </div>
+          <div class="horoscope-cat">
+            <span data-i18n="horoscope.category_career">Career</span>
+            <p id="horoscope-career"></p>
+          </div>
+          <div class="horoscope-cat">
+            <span data-i18n="horoscope.category_wellness">Wellness</span>
+            <p id="horoscope-wellness"></p>
+          </div>
+        </div>
+        <div class="horoscope-meta">
+          <div><span data-i18n="horoscope.lucky_color">Lucky color</span><strong id="horoscope-color"></strong></div>
+          <div><span data-i18n="horoscope.lucky_number">Lucky number</span><strong id="horoscope-number"></strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="geomagnetic">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="geo.title">How today might feel</h2>
+        <p data-i18n="geo.sub">Today's real geomagnetic reading, plus what folk tradition says about it.</p>
+      </div>
+    </div>
+    <div class="geo-panel" id="geomagnetic-widget">
+      <div class="geo-panel-top">
+        <span class="geo-badge" id="geo-tier-badge">—</span>
+        <span class="geo-kp" id="geo-kp-value">—</span>
+      </div>
+      <p id="geo-text"></p>
+      <p class="geo-disclaimer" data-i18n="geo.disclaimer">This is traditional folk belief, not medical or scientific advice.</p>
+      <p style="margin-top:8px;font-size:0.85rem"><a href="blog/geomagnetic-storms-kp-index-explained.html" data-lang-block="en">What the Kp-index actually measures →</a><a href="blog/geomagnetic-storms-kp-index-explained.html" data-lang-block="ua">Що насправді вимірює Kp-індекс →</a></p>
+    </div>
+  </section>
+
   <section class="container">
     <div class="section-head">
       <div>
@@ -144,6 +244,10 @@
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/sky-data.js"></script>
+<script src="assets/js/apod.js"></script>
+<script src="assets/js/tarot.js"></script>
+<script src="assets/js/horoscope.js"></script>
+<script src="assets/js/geomagnetic.js"></script>
 <script src="assets/js/ads.js"></script>
 </body>
 </html>
