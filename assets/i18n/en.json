@@ -6,6 +6,8 @@
   "nav": {
     "home": "Home",
     "blog": "Blog",
+    "horoscope": "Horoscope",
+    "tarot": "Tarot",
     "ads": "Ads",
     "about": "About",
     "terms": "Terms"
@@ -48,6 +50,33 @@
     "title": "From the blog",
     "sub": "Space, explained through everyday life.",
     "cta": "All posts"
+  },
+  "apod": {
+    "title": "Today from space",
+    "sub": "NASA's Astronomy Picture of the Day, refreshed automatically.",
+    "credit_label": "Credit",
+    "source_link": "View source on NASA APOD"
+  },
+  "horoscope": {
+    "title": "Daily horoscope",
+    "sub": "Pick your sign for today's reading — updates every day.",
+    "lucky_color": "Lucky color",
+    "lucky_number": "Lucky number",
+    "category_love": "Love",
+    "category_career": "Career",
+    "category_wellness": "Wellness"
+  },
+  "tarot": {
+    "title": "Card of the day",
+    "sub": "One card, drawn for everyone today.",
+    "reveal_button": "Reveal today's card",
+    "note": "Want a full reading? See our community readers on the Ads page."
+  },
+  "geo": {
+    "title": "How today might feel",
+    "sub": "Today's real geomagnetic reading, plus what folk tradition says about it.",
+    "disclaimer": "This is traditional folk belief, not medical or scientific advice.",
+    "kp_now": "Kp right now"
   },
   "ads_preview": {
     "title": "Community",
