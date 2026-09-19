@@ -13,35 +13,13 @@
  */
 const fs = require("fs");
 const path = require("path");
+const { translateText } = require("./lib/deepl");
 
 const DATA_PATH = path.join(__dirname, "..", "data", "blog-posts.json");
 const API_KEY = process.env.DEEPL_API_KEY;
 
 async function translate(text) {
-  if (!text) return text;
-  const isFreeKey = API_KEY.endsWith(":fx");
-  const endpoint = isFreeKey
-    ? "https://api-free.deepl.com/v2/translate"
-    : "https://api.deepl.com/v2/translate";
-
-  const res = await fetch(endpoint, {
-    method: "POST",
-    headers: {
-      Authorization: `DeepL-Auth-Key ${API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      text: [text],
-      source_lang: "EN",
-      target_lang: "UK", // Ukrainian
-    }),
-  });
-
-  if (!res.ok) {
-    throw new Error(`DeepL request failed: ${res.status} ${await res.text()}`);
-  }
-  const data = await res.json();
-  return data.translations[0].text;
+  return translateText(text, API_KEY);
 }
 
 async function main() {
