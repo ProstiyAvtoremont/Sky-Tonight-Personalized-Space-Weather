@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galaxy Space — Community Listing</title>
+<meta name="description" content="A community listing shared from Galaxy Space — astrology, tarot, and related readings.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Galaxy Space — Community Listing">
+<meta property="og:description" content="A community listing shared from Galaxy Space — astrology, tarot, and related readings.">
+<meta property="og:site_name" content="Galaxy Space">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Galaxy Space — Community Listing">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23ffd166%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="starfield" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Galaxy Space</a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="index.html#horoscope" data-i18n="nav.horoscope">Horoscope</a></li>
+      <li><a href="index.html#tarot" data-i18n="nav.tarot">Tarot</a></li>
+      <li><a href="ads.html" data-i18n="nav.ads" aria-current="page">Ads</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button data-lang="en" type="button">EN</button>
+        <button data-lang="ua" type="button">UA</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container" style="padding-top:40px;padding-bottom:60px">
+
+  <div id="biz-card" class="biz-card-wrap" style="display:none">
+    <div class="biz-card">
+      <div class="biz-card-top">
+        <span class="biz-eyebrow" data-i18n="biz.eyebrow">Community listing</span>
+        <span class="tag" id="biz-category"></span>
+      </div>
+      <h1 id="biz-name"></h1>
+      <p id="biz-desc"></p>
+      <span class="price" id="biz-price" style="display:none"></span>
+      <a id="biz-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:6px;display:none"></a>
+
+      <div class="biz-card-footer">
+        <div class="biz-branding">
+          <span class="brand-mark" aria-hidden="true" style="width:20px;height:20px"></span>
+          <div>
+            <strong data-i18n="biz.branding">A community listing on Galaxy Space</strong>
+            <a href="ads.html" data-i18n="biz.branding_cta" style="display:block;font-size:0.82rem">See tonight's sky and more listings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="biz-share-block">
+      <h3 data-i18n="biz.share_title">Share this listing</h3>
+      <div class="share-buttons" id="biz-share"></div>
+    </div>
+  </div>
+
+  <div id="biz-card-not-found" class="empty-state" style="display:none;max-width:520px;margin:0 auto">
+    <p data-i18n="biz.not_found">This listing couldn't be found — it may have been removed, or the link is incorrect.</p>
+    <a class="btn btn-ghost" href="ads.html" data-i18n="biz.back_to_ads" style="margin-top:12px;display:inline-flex">See all listings</a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <span data-i18n="footer.tagline">A small, honest window into the sky above you.</span>
+    <div class="footer-links">
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="terms.html" data-i18n="nav.terms">Terms</a>
+      <a href="ads.html" data-i18n="nav.ads">Ads</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/ads-config.js"></script>
+<script src="assets/js/share.js"></script>
+<script src="assets/js/business-card.js"></script>
+</body>
+</html>
