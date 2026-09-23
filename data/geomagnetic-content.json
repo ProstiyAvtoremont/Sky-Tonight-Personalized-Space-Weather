@@ -1,0 +1,21 @@
+{
+  "tiers": {
+    "low": [
+      { "en": "A calm day for the geomagnetic field — traditionally read as a steady, even day for routine and focus.", "ua": "Спокійний день для геомагнітного поля — за традицією це вважається рівним, стабільним днем для рутини та зосередження." },
+      { "en": "Quiet conditions overhead. Folk tradition would call this a good day for finishing something you started.", "ua": "Тихі умови над головою. За народною традицією, це гарний день, щоб завершити розпочате." },
+      { "en": "Low activity today — often described in popular tradition as a grounded, unremarkable, and pleasant day.", "ua": "Сьогодні низька активність — у народній традиції такий день часто описують як спокійний, врівноважений і приємний." },
+      { "en": "Nothing stirring in the geomagnetic field. A traditionally favorable day for sleep and routine.", "ua": "У геомагнітному полі без змін. За традицією такий день сприятливий для сну та звичного розпорядку." }
+    ],
+    "moderate": [
+      { "en": "Some geomagnetic activity today. Folk tradition associates days like this with mild restlessness or a shorter attention span for some people.", "ua": "Сьогодні помірна геомагнітна активність. За народною традицією такі дні пов'язують із легким неспокоєм або короткою концентрацією уваги в деяких людей." },
+      { "en": "A moderately active day for the field. Traditionally seen as a day to pace yourself rather than push hard.", "ua": "Помірно активний день для поля. За традицією такий день краще проживати в своєму темпі, а не форсувати події." },
+      { "en": "Elevated but unremarkable activity. Popular belief suggests taking it a little easier than usual today.", "ua": "Підвищена, але не критична активність. За народними прикметами сьогодні варто діяти трохи спокійніше, ніж зазвичай." },
+      { "en": "A day with some geomagnetic movement — traditionally linked to lighter sleep for those who consider themselves sensitive to it.", "ua": "День із певним геомагнітним рухом — за традицією пов'язують із легшим сном у тих, хто вважає себе чутливим до цього." }
+    ],
+    "high": [
+      { "en": "Notably active conditions today, and also good odds for visible aurora at higher latitudes. Tradition holds that sensitive people may feel it more than usual — worth an easier pace and more rest if that's you.", "ua": "Сьогодні помітно активні умови, і водночас хороші шанси побачити полярне сяйво на високих широтах. За традицією чутливі люди можуть відчувати це сильніше, ніж зазвичай, — варто взяти повільніший темп і більше відпочивати, якщо це про вас." },
+      { "en": "A strongly active day for the geomagnetic field. Folk wisdom says: hydrate, rest well, and don't force big decisions today.", "ua": "День із сильною геомагнітною активністю. Народна мудрість каже: пийте достатньо води, добре відпочивайте і не форсуйте важливі рішення сьогодні." },
+      { "en": "High activity — and a real chance of aurora if your skies are dark enough tonight. Tradition suggests going easier on yourself today.", "ua": "Висока активність — і реальний шанс побачити сяйво сьогодні ввечері, якщо небо достатньо темне. Традиція радить сьогодні бути до себе поблажливішими." }
+    ]
+  }
+}
