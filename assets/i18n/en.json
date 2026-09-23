@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Galaxy Space — tonight's sky, made simple",
+    "description": "Your daily view of the night sky: moon phase, sunrise and sunset, the ISS overhead, and the odds of an aurora tonight."
+  },
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "horoscope": "Horoscope",
+    "tarot": "Tarot",
+    "ads": "Ads",
+    "about": "About",
+    "terms": "Terms"
+  },
+  "hero": {
+    "title": "Tonight's sky, without the guesswork",
+    "lede": "Galaxy Space turns raw space data into one simple daily view: what the moon looks like tonight, when the sun rises and sets, where the ISS is right now, and whether there's a real chance of aurora.",
+    "cta_primary": "See tonight's sky",
+    "cta_secondary": "Read the blog"
+  },
+  "sky": {
+    "panel_title": "Tonight at a glance",
+    "panel_sub": "Live, calculated in your browser",
+    "moon_label": "Moon phase",
+    "sun_label": "Sunset / sunrise",
+    "iss_label": "ISS right now",
+    "aurora_label": "Aurora chance",
+    "loc_placeholder": "City or coordinates (optional)",
+    "loc_button": "Update",
+    "loc_note": "Uses your device location if you allow it, or the coordinates you enter. Nothing is stored or sent to a server.",
+    "loading": "Reading the sky…",
+    "iss_over": "currently over",
+    "kp_low": "Low — unlikely except near the poles",
+    "kp_moderate": "Moderate — possible at high latitudes",
+    "kp_high": "Elevated — worth stepping outside tonight"
+  },
+  "glance": {
+    "title": "Why check tonight?",
+    "sub": "Four numbers, updated live, that tell you whether it's worth looking up.",
+    "card1_title": "Moon brightness",
+    "card1_body": "A new moon means darker skies and better stargazing; a full moon means better moonlit walks.",
+    "card2_title": "Visible window",
+    "card2_body": "Sunset and sunrise mark your actual dark-sky window, adjusted to your location.",
+    "card3_title": "Space station passes",
+    "card3_body": "The ISS is visible to the naked eye — like a fast, steady star crossing the sky.",
+    "card4_title": "Geomagnetic activity",
+    "card4_body": "The Kp-index tells you how likely an aurora is tonight, even far from the poles."
+  },
+  "blog_preview": {
+    "title": "From the blog",
+    "sub": "Space, explained through everyday life.",
+    "cta": "All posts"
+  },
+  "apod": {
+    "title": "Today from space",
+    "sub": "NASA's Astronomy Picture of the Day, refreshed automatically.",
+    "credit_label": "Credit",
+    "source_link": "View source on NASA APOD"
+  },
+  "horoscope": {
+    "title": "Daily horoscope",
+    "sub": "Pick your sign for today's reading — updates every day.",
+    "lucky_color": "Lucky color",
+    "lucky_number": "Lucky number",
+    "category_love": "Love",
+    "category_career": "Career",
+    "category_wellness": "Wellness"
+  },
+  "tarot": {
+    "title": "Card of the day",
+    "sub": "One card, drawn for everyone today.",
+    "reveal_button": "Reveal today's card",
+    "note": "Want a full reading? See our community readers on the Ads page."
+  },
+  "geo": {
+    "title": "How today might feel",
+    "sub": "Today's real geomagnetic reading, plus what folk tradition says about it.",
+    "disclaimer": "This is traditional folk belief, not medical or scientific advice.",
+    "kp_now": "Kp right now"
+  },
+  "ads_preview": {
+    "title": "Community",
+    "sub": "Readers offering astrology, tarot, and related readings.",
+    "cta": "See all listings"
+  },
+  "footer": {
+    "tagline": "A small, honest window into the sky above you.",
+    "rights": "Galaxy Space. Built as an independent, ad-free-of-tracking project."
+  },
+  "blog_page": {
+    "title": "Blog",
+    "lede": "Notes on space, explained through ordinary, everyday moments.",
+    "empty": "No posts yet — check back soon."
+  },
+  "about_page": {
+    "title": "About Galaxy Space",
+    "lede": "Why this site exists, and how it works.",
+    "s1_title": "What this is",
+    "s1_body": "Galaxy Space is an independent, one-person project. It pulls a handful of free, public space-data sources into one page, so you can see tonight's sky at a glance instead of hunting across five different apps.",
+    "s2_title": "How the data works",
+    "s2_body": "Moon phase is calculated directly in your browser. Sunrise, sunset, and geomagnetic activity come from free public APIs. Nothing about your location is stored on a server — if you share it, it stays in your browser session only.",
+    "s3_title": "About the community ads",
+    "s3_body": "The Ads page lets readers advertise astrology, tarot, and related services. Every listing is reviewed by a person before it goes live — see the Terms page for details.",
+    "s4_title": "Get in touch",
+    "s4_body": "Questions, corrections, or partnership ideas are welcome — see the contact details on the Terms page."
+  },
+  "terms_page": {
+    "title": "Terms of use",
+    "lede": "Plain-language rules for using Galaxy Space.",
+    "s1_title": "1. The site",
+    "s1_body": "Galaxy Space is provided as-is, free to use, for general informational purposes. Sky data (moon phase, sunrise/sunset, ISS position, geomagnetic activity) is sourced from public data providers and is approximate — it is not a substitute for official aviation, maritime, or scientific data.",
+    "s2_title": "2. Community ads",
+    "s2_body": "The Ads page allows independent practitioners (astrology, tarot, and related readings) to list their services in exchange for a link back to Galaxy Space. Submitting a listing does not guarantee publication.",
+    "s3_title": "3. Moderation",
+    "s3_body": "Every submitted listing is reviewed manually before publication. We may reject or remove any listing that is misleading, promises guaranteed outcomes (e.g. medical, legal, or financial guarantees), targets minors, or otherwise violates these terms — without needing to give a reason.",
+    "s4_title": "4. No liability for third-party services",
+    "s4_body": "Galaxy Space does not endorse, verify, or take responsibility for the services listed on the Ads page. Any arrangement you make with an advertiser is between you and them.",
+    "s5_title": "5. Changes",
+    "s5_body": "These terms may change as the site evolves. Continued use of the site means you accept the current version."
+  },
+  "ads_page": {
+    "title": "Community ads",
+    "lede": "A space for readers to offer astrology, tarot, and related readings — in exchange for linking back here.",
+    "how_title": "How it works",
+    "how_body": "Submit your listing through the form below. Every submission is reviewed by a person — never posted automatically — usually within a few days. Once approved, your listing appears here with a link to your site or profile, and we ask that you link back to Galaxy Space in return.",
+    "submit_button": "Submit a listing",
+    "status_note": "Listings are added after manual review, so this page may not reflect the newest submissions immediately.",
+    "empty": "No listings yet — be the first to submit one.",
+    "guidelines_title": "What gets approved",
+    "guideline1": "Astrology, tarot, numerology, palmistry, and similar practices",
+    "guideline2": "A real, working link to your service or social profile",
+    "guideline3": "No promises of guaranteed outcomes, medical claims, or pressure tactics",
+    "guideline4": "Nothing aimed at or accessible to minors",
+    "view_card": "View business card"
+  },
+  "biz": {
+    "eyebrow": "Community listing",
+    "not_found": "This listing couldn't be found — it may have been removed, or the link is incorrect.",
+    "back_to_ads": "See all listings",
+    "share_title": "Share this listing",
+    "branding": "A community listing on Galaxy Space",
+    "branding_cta": "See tonight's sky and more listings"
+  },
+  "share": {
+    "copy_link": "Copy link",
+    "copied": "Copied!",
+    "more": "More…"
+  }
+}
