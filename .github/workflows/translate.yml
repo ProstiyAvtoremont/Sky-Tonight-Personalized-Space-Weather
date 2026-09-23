@@ -1,0 +1,39 @@
+name: Auto-translate blog posts
+
+# Runs whenever blog-posts.json changes on main. Finds any post with an
+# empty "ua" field, translates it from English with the free DeepL API,
+# and commits the result back — so you only ever have to write posts in
+# English (or Ukrainian) and the other language fills itself in.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/blog-posts.json"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run translation script
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+        run: node scripts/translate.js
+
+      - name: Commit translated content
+        run: |
+          git config user.name "galaxyspace-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/blog-posts.json
+          git diff --cached --quiet || git commit -m "chore: auto-translate blog content [skip ci]"
+          git push
