@@ -1,0 +1,98 @@
+[
+  {
+    "date": "September 18, 2026",
+    "slug": "beginners-guide-to-stargazing",
+    "tag": {
+      "en": "Stargazing",
+      "ua": "Спостереження за зорями"
+    },
+    "title": {
+      "en": "A Beginner's Guide to Stargazing: Best Times, Conditions, and What to Look For",
+      "ua": "Гід зі спостереження за зорями для початківців: найкращий час, умови та на що дивитись"
+    },
+    "excerpt": {
+      "en": "No telescope needed: how to pick the right night, adapt your eyes, and know what's actually worth looking for.",
+      "ua": "Телескоп не потрібен: як обрати правильну ніч, адаптувати зір і знати, на що справді варто дивитись."
+    }
+  },
+  {
+    "date": "September 15, 2026",
+    "slug": "iss-and-satellites-over-your-head",
+    "tag": {
+      "en": "Satellites",
+      "ua": "Супутники"
+    },
+    "title": {
+      "en": "The ISS and the Satellites Over Your Head: What You Can Actually See Tonight",
+      "ua": "МКС і супутники над вами: що насправді можна побачити сьогодні ввечері"
+    },
+    "excerpt": {
+      "en": "How to actually spot the International Space Station, tell it apart from a plane, and what else is orbiting overhead.",
+      "ua": "Як справді помітити Міжнародну космічну станцію, відрізнити її від літака і що ще обертається над головою."
+    }
+  },
+  {
+    "date": "September 12, 2026",
+    "slug": "moon-phases-and-folklore",
+    "tag": {
+      "en": "Night sky",
+      "ua": "Нічне небо"
+    },
+    "title": {
+      "en": "Moon Phases and Folklore: Why the Full Moon Gets All the Attention",
+      "ua": "Фази місяця та фольклор: чому повний місяць привертає найбільше уваги"
+    },
+    "excerpt": {
+      "en": "What moon phases actually are, where full-moon folklore comes from, and what the research really shows.",
+      "ua": "Що таке фази місяця насправді, звідки походить фольклор про повний місяць і що насправді кажуть дослідження."
+    }
+  },
+  {
+    "date": "September 9, 2026",
+    "slug": "geomagnetic-storms-kp-index-explained",
+    "tag": {
+      "en": "Space weather",
+      "ua": "Космічна погода"
+    },
+    "title": {
+      "en": "What Is a Geomagnetic Storm? The Kp-Index Explained Simply",
+      "ua": "Що таке магнітна буря? Kp-індекс простими словами"
+    },
+    "excerpt": {
+      "en": "What geomagnetic storms and the Kp-index actually measure, why they matter for the aurora, and what the science does and doesn't say.",
+      "ua": "Що насправді вимірюють магнітні бурі та Kp-індекс, чому це важливо для полярного сяйва і що каже, а що не каже наука."
+    }
+  },
+  {
+    "date": "September 5, 2026",
+    "slug": "tarot-cards-explained",
+    "tag": {
+      "en": "Tarot",
+      "ua": "Таро"
+    },
+    "title": {
+      "en": "Tarot Cards Explained: History, the Major Arcana, and How a Daily Draw Works",
+      "ua": "Таро простими словами: історія, Старші Аркани та як працює карта дня"
+    },
+    "excerpt": {
+      "en": "Where tarot cards came from, what the Major Arcana represent, and how a daily tarot card draw actually works.",
+      "ua": "Звідки походить таро, що означають Старші Аркани і як насправді працює щоденне витягування карти."
+    }
+  },
+  {
+    "date": "September 1, 2026",
+    "slug": "how-horoscopes-work",
+    "tag": {
+      "en": "Astrology",
+      "ua": "Астрологія"
+    },
+    "title": {
+      "en": "How Horoscopes Work: A Plain-Language Guide to Zodiac Signs and Daily Readings",
+      "ua": "Як працюють гороскопи: зрозумілий гід до знаків зодіаку та щоденних прогнозів"
+    },
+    "excerpt": {
+      "en": "Where the zodiac comes from, what a sign actually represents, and how a daily horoscope reading gets written — explained simply.",
+      "ua": "Звідки походить зодіак, що насправді означає знак і як пишеться щоденний гороскоп — просто про складне."
+    }
+  }
+]
