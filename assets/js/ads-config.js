@@ -2,7 +2,7 @@
    Set these once here; ads.js and business-card.js both read from this file.
 */
 window.GS_ADS_CONFIG = {
-  SHEET_ID: "e/2PACX-1vS3qI546wzNxYpZTW9OMT3FFtDz2ENXRQ9rthJc6ZGBWwgYqdRRlqZP3Gr0grHYj37hSFGrmV9FxJs5", // from the sheet's URL
+  SHEET_ID: "1GCqkoBJmyadfBFGlAYDdw29nUETdX83IgNgNzXLp5b4", // from the sheet's URL
   APPROVED_TAB: "Approved",
   FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLSexuhqt2SMtQS6ZuMFjoaQFJEC7HDX9Ig25AxbmkTscbkE7lA/viewform?usp=publish-editor", // your Google Form link
 };
