@@ -8,6 +8,7 @@
     "blog": "Blog",
     "horoscope": "Horoscope",
     "tarot": "Tarot",
+    "weather": "Weather",
     "ads": "Ads",
     "about": "About",
     "terms": "Terms"
@@ -77,6 +78,19 @@
     "sub": "Today's real geomagnetic reading, plus what folk tradition says about it.",
     "disclaimer": "This is traditional folk belief, not medical or scientific advice.",
     "kp_now": "Kp right now"
+  },
+  "weather": {
+    "title": "Weather forecast",
+    "sub": "Live conditions and a 5-day outlook for any location.",
+    "feels_like": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "precipitation": "Chance of rain",
+    "forecast_label": "Next 5 days",
+    "loc_placeholder": "City or coordinates",
+    "loc_button": "Update",
+    "loc_note": "Uses your device location if you allow it, or the city you search. Nothing is stored on a server.",
+    "today": "Today"
   },
   "ads_preview": {
     "title": "Community",
