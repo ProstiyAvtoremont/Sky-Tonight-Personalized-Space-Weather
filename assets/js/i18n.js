@@ -3,11 +3,16 @@
   const SUPPORTED = ["en", "ua"];
   const STORAGE_KEY = "gs_lang";
 
+  // Ukrainian is this site's primary language and the default for every
+  // visitor unless they've explicitly switched before. English is a
+  // secondary option for non-Ukrainian-speaking visitors, so it's only
+  // shown if the person's browser is clearly set to English and they
+  // haven't visited before — it never overrides an existing choice.
   function detectDefaultLang() {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved && SUPPORTED.includes(saved)) return saved;
-    const nav = (navigator.language || "en").toLowerCase();
-    return nav.startsWith("uk") ? "ua" : "en";
+    const nav = (navigator.language || "").toLowerCase();
+    return nav.startsWith("en") ? "en" : "ua";
   }
 
   function getByPath(obj, path) {
