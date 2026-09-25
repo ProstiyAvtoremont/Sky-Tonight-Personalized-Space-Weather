@@ -8,13 +8,16 @@ window.GS_ADS_CONFIG = {
 };
 
 /* Turns text into a URL-safe slug, used as a fallback when a listing has no
-   explicit "slug" column filled in. */
+   explicit "slug" column filled in. Unicode-aware, so Ukrainian (Cyrillic)
+   titles produce a real slug instead of an empty string — e.g.
+   "Таро від Оксани" becomes "таро-від-оксани" rather than being stripped
+   down to nothing. */
 window.gsSlugify = function (text) {
   return (text || "")
     .toString()
     .toLowerCase()
     .trim()
-    .replace(/[^\w\s-]/g, "")
+    .replace(/[^\p{L}\p{N}\s-]/gu, "")
     .replace(/[\s_]+/g, "-")
     .replace(/-+/g, "-")
     .replace(/^-|-$/g, "");
