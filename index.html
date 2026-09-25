@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galaxy Space</title>
-<meta name="description" content="Tonight's sky, made simple.">
+<title>Galaxy Space — небо сьогодні ввечері, просто</title>
+<meta name="description" content="Щоденний погляд на нічне небо: фаза місяця, схід і захід сонця, МКС над головою та ймовірність полярного сяйва сьогодні.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23ffd166%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,7 @@
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
       <li><a href="index.html" data-i18n="nav.home" aria-current="page">Home</a></li>
+      <li><a href="index.html#weather" data-i18n="nav.weather">Weather</a></li>
       <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
       <li><a href="index.html#horoscope" data-i18n="nav.horoscope">Horoscope</a></li>
       <li><a href="index.html#tarot" data-i18n="nav.tarot">Tarot</a></li>
@@ -29,8 +30,8 @@
     </ul>
     <div class="nav-right">
       <div class="lang-toggle">
-        <button data-lang="en" type="button">EN</button>
         <button data-lang="ua" type="button">UA</button>
+        <button data-lang="en" type="button">EN</button>
       </div>
     </div>
   </nav>
@@ -106,6 +107,50 @@
         <h3 data-i18n="glance.card4_title">Geomagnetic activity</h3>
         <p data-i18n="glance.card4_body">The Kp-index tells you the odds of aurora.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="container" id="weather">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="weather.title">Weather forecast</h2>
+        <p data-i18n="weather.sub">Live conditions and a 5-day outlook for any location.</p>
+      </div>
+    </div>
+    <div class="weather-panel" id="weather-widget">
+      <div class="weather-current">
+        <span class="weather-icon-big" id="weather-icon">—</span>
+        <div>
+          <div class="weather-loc" id="weather-loc">—</div>
+          <div class="weather-temp-big" id="weather-temp">—</div>
+          <div class="weather-desc" id="weather-desc"></div>
+        </div>
+      </div>
+      <div class="weather-stats">
+        <div class="weather-stat">
+          <div class="label" data-i18n="weather.feels_like">Feels like</div>
+          <div class="value" id="weather-feels">—</div>
+        </div>
+        <div class="weather-stat">
+          <div class="label" data-i18n="weather.humidity">Humidity</div>
+          <div class="value" id="weather-humidity">—</div>
+        </div>
+        <div class="weather-stat">
+          <div class="label" data-i18n="weather.wind">Wind</div>
+          <div class="value" id="weather-wind">—</div>
+        </div>
+        <div class="weather-stat">
+          <div class="label" data-i18n="weather.precipitation">Chance of rain</div>
+          <div class="value" id="weather-precip">—</div>
+        </div>
+      </div>
+      <div class="weather-forecast-label" data-i18n="weather.forecast_label">Next 5 days</div>
+      <div class="weather-days" id="weather-days"></div>
+      <form class="weather-loc-form" id="weather-loc-form">
+        <input type="text" id="weather-loc-input" data-i18n-placeholder="weather.loc_placeholder" placeholder="City or coordinates">
+        <button type="submit" data-i18n="weather.loc_button">Update</button>
+      </form>
+      <p class="sky-note" data-i18n="weather.loc_note">Uses your device location if you allow it.</p>
     </div>
   </section>
 
@@ -244,6 +289,7 @@
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/sky-data.js"></script>
+<script src="assets/js/weather.js"></script>
 <script src="assets/js/apod.js"></script>
 <script src="assets/js/tarot.js"></script>
 <script src="assets/js/horoscope.js"></script>
