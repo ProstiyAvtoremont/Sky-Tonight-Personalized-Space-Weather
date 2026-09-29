@@ -25,6 +25,18 @@
     return rows.map(window.gsNormalizeRow);
   }
 
+  // Cards are built after the page's translations have already been applied,
+  // so translate their data-i18n elements here (falls back to the Ukrainian
+  // text written in the markup if the dictionary hasn't loaded yet).
+  function translateWithin(root) {
+    const dict = window.__gsDict;
+    if (!dict || !root) return;
+    root.querySelectorAll("[data-i18n]").forEach((el) => {
+      const val = el.getAttribute("data-i18n").split(".").reduce((o, k) => (o && o[k] !== undefined ? o[k] : undefined), dict);
+      if (val !== undefined) el.textContent = val;
+    });
+  }
+
   function cardSlug(row) {
     return row.slug && row.slug.trim() ? row.slug.trim() : window.gsSlugify(row.title);
   }
@@ -40,7 +52,7 @@
       <p>${row.description || ""}</p>
       ${row.price ? `<span class="price">${row.price}</span>` : ""}
       <div class="ad-card-links">
-        <a href="${cardUrl}" class="ad-card-view" data-i18n="ads_page.view_card">View business card</a>
+        <a href="${cardUrl}" class="ad-card-view" data-i18n="ads_page.view_card">Відкрити оголошення</a>
         ${row.link ? `<a href="${row.link}" target="_blank" rel="noopener noreferrer">${row.link_label || row.link}</a>` : ""}
       </div>
     `;
@@ -54,12 +66,15 @@
       const rows = await fetchApprovedAds();
       if (!rows || !rows.length) {
         wrap.innerHTML = `<div class="empty-state" data-i18n="ads_page.empty"></div>`;
+        translateWithin(wrap);
         return;
       }
       wrap.innerHTML = "";
       rows.forEach((r) => wrap.appendChild(adCard(r)));
+      translateWithin(wrap);
     } catch (e) {
       wrap.innerHTML = `<div class="empty-state" data-i18n="ads_page.empty"></div>`;
+        translateWithin(wrap);
     }
   }
 
@@ -74,6 +89,7 @@
       }
       wrap.innerHTML = "";
       rows.slice(0, 3).forEach((r) => wrap.appendChild(adCard(r)));
+      translateWithin(wrap);
     } catch (e) {
       if (wrap.parentElement) wrap.parentElement.style.display = "none";
     }
