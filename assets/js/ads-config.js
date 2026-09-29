@@ -22,3 +22,46 @@ window.gsSlugify = function (text) {
     .replace(/-+/g, "-")
     .replace(/^-|-$/g, "");
 };
+
+/* Maps the Google Sheet's column headers to the internal field names the
+   site uses (title, description, category, link, plus optional price,
+   link_label, slug).
+   The sheet uses Ukrainian headers:
+     назва → title
+     опис → description
+     категорія → category
+     посилання на ваш вебсайт або профіль соціальних мереж → link
+   Matching is case-insensitive and ignores extra spaces, and any header that
+   starts with "посилання" is treated as the link column (so a slightly
+   different wording of that long header still works). The old English
+   headers keep working too, so an existing sheet won't break. */
+window.gsNormalizeRow = function (row) {
+  const out = {};
+  const aliases = {
+    "назва": "title",
+    "title": "title",
+    "опис": "description",
+    "description": "description",
+    "категорія": "category",
+    "category": "category",
+    "ціна": "price",
+    "price": "price",
+    "link": "link",
+    "link_label": "link_label",
+    "назва посилання": "link_label",
+    "slug": "slug",
+  };
+  Object.keys(row || {}).forEach((key) => {
+    const k = key.toString().replace(/\s+/g, " ").trim().toLowerCase();
+    let field = aliases[k];
+    if (!field && k.indexOf("посилання") === 0) field = "link";
+    const value = row[key];
+    if (field) {
+      // don't let an empty duplicate column overwrite a filled one
+      if (out[field] === undefined || out[field] === "") out[field] = value;
+    } else {
+      out[key] = value;
+    }
+  });
+  return out;
+};
