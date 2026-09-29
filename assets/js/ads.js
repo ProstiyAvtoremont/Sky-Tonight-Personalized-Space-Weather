@@ -21,7 +21,8 @@
     const url = `https://opensheet.elk.sh/${CFG.SHEET_ID}/${encodeURIComponent(CFG.APPROVED_TAB)}`;
     const res = await fetch(url, { cache: "no-store" });
     if (!res.ok) throw new Error("could not load ads");
-    return res.json();
+    const rows = await res.json();
+    return rows.map(window.gsNormalizeRow);
   }
 
   function cardSlug(row) {
