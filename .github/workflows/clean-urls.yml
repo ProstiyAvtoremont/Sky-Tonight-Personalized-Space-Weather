@@ -1,0 +1,33 @@
+name: Build clean-URL pages
+
+# Regenerates /weather/, /horoscope/, /tarot/, /geomagnetic/ and sitemap.xml
+# whenever index.html, the blog list or the build script changes.
+
+on:
+  push:
+    paths:
+      - "index.html"
+      - "data/blog-posts.json"
+      - "assets/i18n/ua.json"
+      - "scripts/build-clean-urls.js"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node scripts/build-clean-urls.js
+      - name: Commit generated pages
+        run: |
+          git config user.name "galaxyspace-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add weather horoscope tarot geomagnetic sitemap.xml robots.txt
+          git diff --cached --quiet || git commit -m "chore: rebuild clean-URL pages [skip ci]"
+          git push
