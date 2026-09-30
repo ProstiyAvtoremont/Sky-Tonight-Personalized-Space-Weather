@@ -20,7 +20,7 @@
   }
 
   async function loadDeck() {
-    const res = await fetch("data/tarot-cards.json", { cache: "no-store" });
+    const res = await fetch("/data/tarot-cards.json", { cache: "no-store" });
     if (!res.ok) throw new Error("could not load tarot deck");
     return res.json();
   }
@@ -30,6 +30,10 @@
     const nameEl = document.getElementById("tarot-name");
     const meaningEl = document.getElementById("tarot-meaning");
     if (nameEl) nameEl.textContent = card.name[L];
+    const artEl = document.getElementById("tarot-art");
+    if (artEl && window.GS_TAROT_ART && window.GS_TAROT_ART[card.id]) {
+      artEl.innerHTML = window.GS_TAROT_ART[card.id];
+    }
     if (meaningEl) meaningEl.textContent = card.meaning[L];
   }
 
