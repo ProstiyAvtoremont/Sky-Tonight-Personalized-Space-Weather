@@ -18,28 +18,23 @@
   }
 
   async function loadPosts() {
-    const res = await fetch("data/blog-posts.json", { cache: "no-store" });
+    const res = await fetch("/data/blog-posts.json", { cache: "no-store" });
     if (!res.ok) throw new Error("could not load posts");
     return res.json();
-  }
-
-  function lang() {
-    return document.documentElement.lang === "uk" ? "ua" : "en";
   }
 
   function renderPreview(posts) {
     const wrap = document.getElementById("blog-preview-list");
     if (!wrap) return;
-    const L = lang();
     wrap.innerHTML = "";
     posts.slice(0, 3).forEach((p) => {
       const card = document.createElement("article");
       card.className = "card";
-      const href = p.slug ? `blog/${p.slug}.html` : "blog.html";
+      const href = p.slug ? `/blog/${p.slug}/` : "/blog/";
       card.innerHTML = `
-        <span class="tag">${p.tag[L]}</span>
-        <h3><a href="${href}" style="color:inherit">${p.title[L]}</a></h3>
-        <p>${p.excerpt[L]}</p>
+        <span class="tag">${p.tag}</span>
+        <h3><a href="${href}" style="color:inherit">${p.title}</a></h3>
+        <p>${p.excerpt}</p>
         <span class="meta">${p.date}</span>
       `;
       wrap.appendChild(card);
@@ -49,7 +44,6 @@
   function renderFullList(posts) {
     const wrap = document.getElementById("blog-full-list");
     if (!wrap) return;
-    const L = lang();
     if (!posts.length) {
       wrap.innerHTML = `<div class="empty-state" data-i18n="blog_page.empty"></div>`;
       return;
@@ -58,13 +52,13 @@
     posts.forEach((p) => {
       const row = document.createElement("article");
       row.className = "blog-row";
-      const href = p.slug ? `blog/${p.slug}.html` : "#";
+      const href = p.slug ? `/blog/${p.slug}/` : "#";
       row.innerHTML = `
         <div class="date">${p.date}</div>
         <div>
-          <span class="tag">${p.tag[L]}</span>
-          <h3 style="margin-top:8px"><a href="${href}" style="color:inherit">${p.title[L]}</a></h3>
-          <p>${p.excerpt[L]}</p>
+          <span class="tag">${p.tag}</span>
+          <h3 style="margin-top:8px"><a href="${href}" style="color:inherit">${p.title}</a></h3>
+          <p>${p.excerpt}</p>
         </div>
       `;
       wrap.appendChild(row);
