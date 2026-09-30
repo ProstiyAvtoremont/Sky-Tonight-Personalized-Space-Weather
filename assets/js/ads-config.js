@@ -2,9 +2,9 @@
    Set these once here; ads.js and business-card.js both read from this file.
 */
 window.GS_ADS_CONFIG = {
-  SHEET_ID: "YOUR_GOOGLE_SHEET_ID", // from the sheet's URL
+  SHEET_ID: "1GCqkoBJmyadfBFGlAYDdw29nUETdX83IgNgNzXLp5b4", // from the sheet's URL
   APPROVED_TAB: "Approved",
-  FORM_URL: "https://forms.google.com/YOUR_FORM_LINK", // your Google Form link
+  FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLSexuhqt2SMtQS6ZuMFjoaQFJEC7HDX9Ig25AxbmkTscbkE7lA/viewform?usp=publish-editor", // your Google Form link
 };
 
 /* Turns text into a URL-safe slug, used as a fallback when a listing has no
