@@ -5,36 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Гороскоп — Galaxy Space</title>
 <meta name="description" content="Щоденний погляд на нічне небо: фаза місяця, схід і захід сонця, МКС над головою та ймовірність полярного сяйва сьогодні.">
-<link rel="canonical" href="https://galaxyspace.xyz/horoscope/">
-<meta property="og:url" content="https://galaxyspace.xyz/horoscope/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23ffd166%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
-<script>
-/* Old links like /index.html#weather -> clean /weather/ */
-(function(){var m={"#weather":"/weather/","#horoscope":"/horoscope/","#tarot":"/tarot/","#geomagnetic":"/geomagnetic/"};if(m[location.hash])location.replace(m[location.hash]);})();
-</script>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <div id="starfield" aria-hidden="true"></div>
 
 <header class="site-header">
   <nav class="nav">
-    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span>Galaxy Space</a>
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Galaxy Space</a>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
-      <li><a href="/" data-i18n="nav.home">Home</a></li>
-      <li><a href="/weather/" data-i18n="nav.weather">Weather</a></li>
-      <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
-      <li><a href="/horoscope/" data-i18n="nav.horoscope" aria-current="page">Horoscope</a></li>
-      <li><a href="/tarot/" data-i18n="nav.tarot">Tarot</a></li>
-      <li><a href="/ads/" data-i18n="nav.ads">Ads</a></li>
-      <li><a href="/about/" data-i18n="nav.about">About</a></li>
-      <li><a href="/terms/" data-i18n="nav.terms">Terms</a></li>
+      <li><a href="index.html" data-i18n="nav.home" aria-current="page">Home</a></li>
+      <li><a href="index.html#weather" data-i18n="nav.weather">Weather</a></li>
+      <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="index.html#horoscope" data-i18n="nav.horoscope">Horoscope</a></li>
+      <li><a href="index.html#tarot" data-i18n="nav.tarot">Tarot</a></li>
+      <li><a href="ads.html" data-i18n="nav.ads">Ads</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
     </ul>
-
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button data-lang="ua" type="button">UA</button>
+        <button data-lang="en" type="button">EN</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -45,7 +44,7 @@
       <p class="lede" data-i18n="hero.lede">Galaxy Space turns raw space data into one simple daily view.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#sky-panel" data-i18n="hero.cta_primary">See tonight's sky</a>
-        <a class="btn btn-ghost" href="/blog/" data-i18n="hero.cta_secondary">Read the blog</a>
+        <a class="btn btn-ghost" href="blog.html" data-i18n="hero.cta_secondary">Read the blog</a>
       </div>
     </div>
 
@@ -185,16 +184,15 @@
         <div class="tarot-card-inner">
           <div class="tarot-face tarot-back"><div class="tarot-back-mark" aria-hidden="true"></div></div>
           <div class="tarot-face tarot-front">
-            <div class="tarot-art" id="tarot-art"></div>
             <h3 id="tarot-name"></h3>
+            <p id="tarot-meaning"></p>
           </div>
         </div>
       </div>
       <div class="tarot-copy">
-        <p id="tarot-meaning" class="tarot-meaning"></p>
         <p data-i18n="tarot.note">Want a full reading? See our community readers on the Ads page.</p>
         <button class="btn btn-primary" id="tarot-reveal" type="button" data-i18n="tarot.reveal_button">Reveal today's card</button>
-        <p style="margin-top:10px"><a href="/blog/tarot-cards-explained/">Як насправді працює таро →</a></p>
+        <p style="margin-top:10px"><a href="blog/tarot-cards-explained.html" data-lang-block="en">How tarot cards actually work →</a><a href="blog/tarot-cards-explained.html" data-lang-block="ua">Як насправді працює таро →</a></p>
       </div>
     </div>
   </section>
@@ -250,7 +248,7 @@
       </div>
       <p id="geo-text"></p>
       <p class="geo-disclaimer" data-i18n="geo.disclaimer">This is traditional folk belief, not medical or scientific advice.</p>
-      <p style="margin-top:8px;font-size:0.85rem"><a href="/blog/geomagnetic-storms-kp-index-explained/">Що насправді вимірює Kp-індекс →</a></p>
+      <p style="margin-top:8px;font-size:0.85rem"><a href="blog/geomagnetic-storms-kp-index-explained.html" data-lang-block="en">What the Kp-index actually measures →</a><a href="blog/geomagnetic-storms-kp-index-explained.html" data-lang-block="ua">Що насправді вимірює Kp-індекс →</a></p>
     </div>
   </section>
 
@@ -260,7 +258,7 @@
         <h2 data-i18n="blog_preview.title">From the blog</h2>
         <p data-i18n="blog_preview.sub">Space, explained through everyday life.</p>
       </div>
-      <a class="btn btn-ghost" href="/blog/" data-i18n="blog_preview.cta">All posts</a>
+      <a class="btn btn-ghost" href="blog.html" data-i18n="blog_preview.cta">All posts</a>
     </div>
     <div class="card-grid" id="blog-preview-list"></div>
   </section>
@@ -271,7 +269,7 @@
         <h2 data-i18n="ads_preview.title">Community</h2>
         <p data-i18n="ads_preview.sub">Readers offering astrology, tarot, and related readings.</p>
       </div>
-      <a class="btn btn-ghost" href="/ads/" data-i18n="ads_preview.cta">See all listings</a>
+      <a class="btn btn-ghost" href="ads.html" data-i18n="ads_preview.cta">See all listings</a>
     </div>
     <div class="card-grid" id="ads-preview-list"></div>
   </section>
@@ -281,24 +279,23 @@
   <div class="container footer-grid">
     <span data-i18n="footer.tagline">A small, honest window into the sky above you.</span>
     <div class="footer-links">
-      <a href="/about/" data-i18n="nav.about">About</a>
-      <a href="/terms/" data-i18n="nav.terms">Terms</a>
-      <a href="/ads/" data-i18n="nav.ads">Ads</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="terms.html" data-i18n="nav.terms">Terms</a>
+      <a href="ads.html" data-i18n="nav.ads">Ads</a>
     </div>
   </div>
 </footer>
 
-<script src="/assets/js/i18n.js"></script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/sky-data.js"></script>
-<script src="/assets/js/weather.js"></script>
-<script src="/assets/js/apod.js"></script>
-<script src="/assets/js/tarot-art.js"></script>
-<script src="/assets/js/tarot.js"></script>
-<script src="/assets/js/horoscope.js"></script>
-<script src="/assets/js/geomagnetic.js"></script>
-<script src="/assets/js/ads-config.js"></script>
-<script src="/assets/js/ads.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/sky-data.js"></script>
+<script src="assets/js/weather.js"></script>
+<script src="assets/js/apod.js"></script>
+<script src="assets/js/tarot.js"></script>
+<script src="assets/js/horoscope.js"></script>
+<script src="assets/js/geomagnetic.js"></script>
+<script src="assets/js/ads-config.js"></script>
+<script src="assets/js/ads.js"></script>
 <script>
 /* Opens the page scrolled to the "horoscope" block. */
 (function(){function go(){var el=document.getElementById("horoscope");if(el)el.scrollIntoView();}
