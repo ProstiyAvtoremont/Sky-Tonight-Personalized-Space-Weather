@@ -28,7 +28,7 @@
   }
 
   async function loadContent() {
-    const res = await fetch("data/geomagnetic-content.json", { cache: "no-store" });
+    const res = await fetch("/data/geomagnetic-content.json", { cache: "no-store" });
     if (!res.ok) throw new Error("could not load geomagnetic content");
     return res.json();
   }
