@@ -8,7 +8,7 @@
   }
 
   async function loadApod() {
-    const res = await fetch("data/apod.json", { cache: "no-store" });
+    const res = await fetch("/data/apod.json", { cache: "no-store" });
     if (!res.ok) throw new Error("could not load apod data");
     return res.json();
   }
