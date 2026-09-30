@@ -16,7 +16,7 @@
 
   async function loadCodes() {
     if (CODES) return CODES;
-    const res = await fetch("data/weather-codes.json", { cache: "no-store" });
+    const res = await fetch("/data/weather-codes.json", { cache: "no-store" });
     CODES = await res.json();
     return CODES;
   }
