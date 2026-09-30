@@ -45,7 +45,7 @@
     const el = document.createElement("article");
     el.className = "card ad-card";
     const slug = cardSlug(row);
-    const cardUrl = `business-card.html?id=${encodeURIComponent(slug)}`;
+    const cardUrl = `/business-card/?id=${encodeURIComponent(slug)}`;
     el.innerHTML = `
       <span class="tag">${row.category || ""}</span>
       <h3>${row.title || ""}</h3>
