@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-30",
-  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/NGC772_Robert_Eder.jpg?w=1772&h=1182&fit=clip&crop=faces%2Cfocalpoint",
+  "date": "placeholder",
+  "image_url": "",
   "media_type": "image",
-  "source_url": "https://science.nasa.gov/image-article/apod-2026-september-30-arp-78-peculiar-galaxy-in-aries/",
-  "credit": "Robert Eder",
+  "source_url": "",
+  "credit": null,
   "title": {
-    "en": "Arp 78: Peculiar Galaxy in Aries",
-    "ua": ""
+    "en": "Today's picture is on its way",
+    "ua": "Сьогоднішнє зображення вже в дорозі"
   },
   "explanation": {
-    "en": "Peculiar spiral galaxy Arp 78 is found within the boundaries of the head strong constellation Aries. Some 100 million light-years beyond the stars and nebulae of our Milky Way galaxy, the island universe is an enormous 200,000 light-years across. Also known as NGC 772, it sports a prominent, outer spiral arm in this detailed cosmic portrait. Tracking along sweeping dust lanes and lined with young blue star clusters, Arp 78's overdeveloped spiral arm is pumped-up by galactic-scale gravitational tides. Interactions with its brightest companion galaxy, the more compact NGC 770 seen directly below the larger spiral, are likely responsible. Embedded in faint star streams revealed in the deep telescopic exposure, NGC 770's fuzzy, elliptical appearance contrasts nicely with spiky foreground Milky Way stars.APOD's email for image submissions has changed. Please see: APOD Submissions.Tomorrow's picture: a harvest",
-    "ua": ""
+    "en": "This panel updates automatically once a day with NASA's Astronomy Picture of the Day. Run the \"Daily content refresh\" workflow once from the Actions tab to load the first one.",
+    "ua": "Ця панель оновлюється автоматично раз на день зображенням дня від NASA. Запустіть workflow «Daily content refresh» у вкладці Actions один раз, щоб завантажити перше зображення."
   }
 }
