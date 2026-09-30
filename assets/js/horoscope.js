@@ -18,7 +18,7 @@
   }
 
   async function loadContent() {
-    const res = await fetch("data/horoscope-content.json", { cache: "no-store" });
+    const res = await fetch("/data/horoscope-content.json", { cache: "no-store" });
     if (!res.ok) throw new Error("could not load horoscope content");
     return res.json();
   }
