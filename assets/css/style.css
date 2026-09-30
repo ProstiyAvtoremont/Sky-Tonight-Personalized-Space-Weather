@@ -131,23 +131,6 @@ p { margin: 0 0 1em; color: var(--text-dim); max-width: 62ch; }
 .nav-links a:hover { color: var(--text); text-decoration: none; background: var(--surface-soft); }
 .nav-links a[aria-current="page"] { color: var(--text); background: var(--surface-soft); }
 
-.nav-right { display: flex; align-items: center; gap: 14px; }
-.lang-toggle {
-  display: flex;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  overflow: hidden;
-}
-.lang-toggle button {
-  background: transparent;
-  border: none;
-  color: var(--text-faint);
-  padding: 6px 13px;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-.lang-toggle button.active { background: var(--surface); color: var(--text); }
-
 .nav-toggle {
   display: none;
   background: none;
@@ -585,15 +568,15 @@ section { padding: 56px 0; }
 /* ---------- daily tarot card ---------- */
 .tarot-block {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 32px;
+  grid-template-columns: 220px 1fr;
+  gap: 36px;
   align-items: center;
 }
 @media (max-width: 700px) { .tarot-block { grid-template-columns: 1fr; justify-items: center; text-align: center; } }
 
 .tarot-card-shell {
-  width: 180px;
-  height: 280px;
+  width: 200px;
+  height: 320px;
   perspective: 1200px;
   flex-shrink: 0;
 }
@@ -630,18 +613,29 @@ section { padding: 56px 0; }
   opacity: 0.85;
 }
 .tarot-front {
-  background: linear-gradient(165deg, #232c58, #131a3a);
+  background: #131a3a;
   transform: rotateY(180deg);
-  flex-direction: column;
-  gap: 10px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(255, 209, 102, 0.12);
 }
-.tarot-front h3 { margin: 0; font-size: 1.05rem; }
-.tarot-front p { font-size: 0.82rem; margin: 0; color: var(--text-dim); }
+.tarot-art { position: absolute; inset: 0; }
+.tarot-art svg { width: 100%; height: 100%; display: block; }
+.tarot-art .frame { fill: #131a3a; stroke: var(--accent); stroke-width: 1.5; }
+.tarot-art .frame2 { fill: none; stroke: var(--accent); stroke-opacity: 0.35; stroke-width: 1; }
+.tarot-art .a { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.tarot-art .b { fill: none; stroke: var(--accent-2); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.tarot-art .fa { fill: var(--accent); stroke: var(--accent); stroke-width: 1.5; stroke-linejoin: round; }
+.tarot-art .fb { fill: var(--accent-2); stroke: var(--accent-2); stroke-width: 1.5; }
+.tarot-art .num { font: 600 17px var(--serif); fill: var(--accent); letter-spacing: 3px; }
+.tarot-front h3 {
+  position: absolute; left: 10px; right: 10px; bottom: 26px;
+  margin: 0; font-size: 1.02rem; text-align: center; color: var(--text);
+}
 
 .tarot-copy .btn { margin-top: 14px; }
-#tarot-name { display: block; margin-bottom: 6px; }
-#tarot-meaning { display: none; }
-#tarot-widget.revealed #tarot-meaning { display: block; }
+.tarot-meaning { display: none; font-family: var(--serif); font-size: 1.2rem; line-height: 1.5; color: var(--text); margin: 0 0 14px; }
+#tarot-widget.revealed .tarot-meaning { display: block; }
 #tarot-widget.revealed #tarot-reveal { display: none; }
 
 /* ---------- daily horoscope ---------- */
@@ -711,8 +705,6 @@ section { padding: 56px 0; }
 }
 .horoscope-meta div { font-size: 0.8rem; color: var(--text-faint); }
 .horoscope-meta strong { display: block; color: var(--text); font-family: var(--serif); font-size: 1rem; font-weight: 600; margin-top: 2px; }
-
-[data-lang-block] { display: none; }
 
 /* ---------- article pages ---------- */
 .breadcrumb {
