@@ -1,27 +1,19 @@
-/* Galaxy Space — i18n loader (no build step, no backend) */
+/* Galaxy Space — content loader (Ukrainian-only)
+   The site used to support an EN/UA toggle; it's now Ukrainian-only, so
+   this simply loads the Ukrainian text once and fills in every
+   data-i18n element. Other scripts on the site (sky-data.js, weather.js,
+   horoscope.js, etc.) key their own language-specific arrays off
+   document.documentElement.lang, which every page now hardcodes to "uk",
+   so they continue to work correctly without any changes.
+*/
 (function () {
-  const SUPPORTED = ["en", "ua"];
-  const STORAGE_KEY = "gs_lang";
-
-  // Ukrainian is this site's primary language and the default for every
-  // visitor unless they've explicitly switched before. English is a
-  // secondary option for non-Ukrainian-speaking visitors, so it's only
-  // shown if the person's browser is clearly set to English and they
-  // haven't visited before — it never overrides an existing choice.
-  function detectDefaultLang() {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved && SUPPORTED.includes(saved)) return saved;
-    const nav = (navigator.language || "").toLowerCase();
-    return nav.startsWith("en") ? "en" : "ua";
-  }
-
   function getByPath(obj, path) {
     return path.split(".").reduce((o, k) => (o && o[k] !== undefined ? o[k] : undefined), obj);
   }
 
-  async function loadDict(lang) {
-    const res = await fetch(`assets/i18n/${lang}.json`, { cache: "no-store" });
-    if (!res.ok) throw new Error(`Could not load ${lang}.json`);
+  async function loadDict() {
+    const res = await fetch(`/assets/i18n/ua.json`, { cache: "no-store" });
+    if (!res.ok) throw new Error(`Could not load ua.json`);
     return res.json();
   }
 
@@ -34,6 +26,9 @@
       const val = getByPath(dict, el.getAttribute("data-i18n-placeholder"));
       if (val !== undefined) el.setAttribute("placeholder", val);
     });
+    // Only the home page (html[data-i18n-meta]) takes its title/description from the dictionary;
+    // every other page keeps the title and description written in its own <head>.
+    if (!document.documentElement.hasAttribute("data-i18n-meta")) return;
     const title = getByPath(dict, "meta.title");
     const desc = getByPath(dict, "meta.description");
     if (title) document.title = title;
@@ -46,49 +41,24 @@
       }
       m.setAttribute("content", desc);
     }
-    document.documentElement.lang = dict.__lang === "ua" ? "uk" : "en";
   }
 
-  function applyLangBlocks(lang) {
-    document.querySelectorAll("[data-lang-block]").forEach((el) => {
-      el.style.display = el.getAttribute("data-lang-block") === lang ? "" : "none";
-    });
-  }
-
-  function setActiveButtons(lang) {
-    document.querySelectorAll(".lang-toggle button").forEach((btn) => {
-      btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
-    });
-  }
-
-  async function setLang(lang) {
-    if (!SUPPORTED.includes(lang)) lang = "en";
-    localStorage.setItem(STORAGE_KEY, lang);
+  async function init() {
     try {
-      const dict = await loadDict(lang);
-      dict.__lang = lang;
+      const dict = await loadDict();
       applyDict(dict);
-      applyLangBlocks(lang);
-      setActiveButtons(lang);
       window.__gsDict = dict;
-      document.dispatchEvent(new CustomEvent("gs:lang-changed", { detail: { lang, dict } }));
+      document.dispatchEvent(new CustomEvent("gs:lang-changed", { detail: { lang: "ua", dict } }));
     } catch (e) {
       console.error(e);
     }
-  }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const lang = detectDefaultLang();
-    setLang(lang);
-    document.querySelectorAll(".lang-toggle button").forEach((btn) => {
-      btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
-    });
     const navToggle = document.querySelector(".nav-toggle");
     const navLinks = document.querySelector(".nav-links");
     if (navToggle && navLinks) {
       navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
     }
-  });
+  }
 
-  window.gsSetLang = setLang;
+  document.addEventListener("DOMContentLoaded", init);
 })();
