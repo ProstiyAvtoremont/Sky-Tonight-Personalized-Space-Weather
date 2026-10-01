@@ -1,15 +1,15 @@
 {
-  "date": "placeholder",
-  "image_url": "",
+  "date": "2026-10-01",
+  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/Harvest%20Moon%20Trail%20With%20Venus%20Belt%20and%20Erupting%20Mount%20Etna%204%20LD.jpg?w=1600&h=1067&fit=clip&crop=faces%2Cfocalpoint",
   "media_type": "image",
-  "source_url": "",
-  "credit": null,
+  "source_url": "https://science.nasa.gov/image-article/apod-2026-october-1-harvest-moon-with-belt-of-venus-and-erupting-mount-etna/",
+  "credit": "Dario Giannobile",
   "title": {
-    "en": "Today's picture is on its way",
-    "ua": "Сьогоднішнє зображення вже в дорозі"
+    "en": "Harvest Moon with Erupting Mount Etna",
+    "ua": "Жнива місяця з проривною горою Етна"
   },
   "explanation": {
-    "en": "This panel updates automatically once a day with NASA's Astronomy Picture of the Day. Run the \"Daily content refresh\" workflow once from the Actions tab to load the first one.",
-    "ua": "Ця панель оновлюється автоматично раз на день зображенням дня від NASA. Запустіть workflow «Daily content refresh» у вкладці Actions один раз, щоб завантажити перше зображення."
+    "en": "Have you ever seen the full moon rise? This colorful image was photographed last weekend in Sicily, just outside the town of Nicosia, in Italy. It is a composite photograph that shows the Moon rising as the sky turns darker. Lower clouds are reflecting the colors of antitwilight, while ash and gas from Mount Etna are seen higher in the background. The pink band lower in the sky is called the Belt of Venus. During a full moon, the Moon and the Sun are in opposition in the sky: the moon rises as the sun sets. The lunar phase cycle lasts approximately 29.5 days (but the Moon takes approximately 27 days to orbit the Earth). In some cultures of the Northern Hemisphere, the September full moon is called the Harvest Moon. Does your culture have a special name for it? (A full moon by any other name would shine as bright.)APOD's email for image submissions has changed. Please see: APOD SubmissionsAPOD's main NASA site has moved : From apod.nasa.gov to science.nasa.gov/apodTomorrow's picture: sharpless",
+    "ua": "Чи бачили ви колись повну картину сходу Місяця? Це кольорове зображення було фотографовано на останніх вихідних у Сицилії, неподалік від міста Нікозії, в Італії. Це складна фотографія, яка показує, як піднімається Місяць, коли небо темнішає. Нижні хмари відбивають кольори антитвіляцій, а попіл і газ з гори Етна - вищі за тлом. Рожевий оркестр, який знаходиться нижче на небі, називається Бельтом Венери. Протягом повного місяця Місяць і Сонце є в опозиції до неба: Місяць сходить, коли заходить сонце. Цикл місячної фази триває приблизно 29, 5 днів (але Місяць змінюється приблизно 27 днів на обертання Землі). У деяких культурах Північної півкулі повний місяць називається Житком. У вашій культурі його називають особливим іменем (на будь- яка інша назва місяця). Будь ласка, подивіться: APOD SubissionsAPOD сайт NASA переїхав з apod.nasa.gov до науки.nasa.gov/apodTo завтра - картинки: razless"
   }
 }
