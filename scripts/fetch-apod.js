@@ -17,15 +17,15 @@
  * page (not the image), the actual image lives in "hdurl", and
  * "explanation"/"credit" contain HTML markup rather than plain text.
  *
- * DEEPL_API_KEY is optional — without it, the Ukrainian fields are left
+ * TRANSLATEAPI_KEY is optional — without it, the Ukrainian fields are left
  * empty and the site falls back to showing the English text.
  */
 const fs = require("fs");
 const path = require("path");
-const { translateText } = require("./lib/deepl");
+const { translateText } = require("./lib/translateapi");
 
 const OUT_PATH = path.join(__dirname, "..", "data", "apod.json");
-const DEEPL_KEY = process.env.DEEPL_API_KEY;
+const TRANSLATE_KEY = process.env.TRANSLATEAPI_KEY;
 const APOD_ENDPOINT = "https://science.nasa.gov/wp-json/wp/v2/apod-basic";
 
 // Strip HTML tags and decode the handful of entities NASA's feed actually
@@ -66,11 +66,19 @@ async function main() {
 
   let titleUa = "";
   let explanationUa = "";
-  if (DEEPL_KEY) {
-    titleUa = await translateText(title, DEEPL_KEY);
-    explanationUa = await translateText(explanation, DEEPL_KEY);
+  if (TRANSLATE_KEY) {
+    try {
+      titleUa = await translateText(title, TRANSLATE_KEY);
+      explanationUa = await translateText(explanation, TRANSLATE_KEY);
+    } catch (err) {
+      // Don't lose the day's picture just because translation failed —
+      // save English only; the site falls back to showing it.
+      titleUa = "";
+      explanationUa = "";
+      console.log(`::warning::APOD translation failed, saving English only: ${err.message}`);
+    }
   } else {
-    console.log("No DEEPL_API_KEY set — saving APOD with English text only.");
+    console.log("No TRANSLATEAPI_KEY set — saving APOD with English text only.");
   }
 
   const out = {
