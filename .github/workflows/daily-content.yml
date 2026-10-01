@@ -24,7 +24,7 @@ jobs:
 
       - name: Fetch and translate APOD
         env:
-          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+          TRANSLATEAPI_KEY: ${{ secrets.TRANSLATEAPI_KEY }}
         run: node scripts/fetch-apod.js
 
       - name: Commit updated content
