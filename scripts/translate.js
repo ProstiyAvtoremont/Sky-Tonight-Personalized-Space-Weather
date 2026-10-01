@@ -4,19 +4,19 @@
  * Usage: write a new post in data/blog-posts.json with the English fields
  * filled in and the matching "ua" fields left as empty strings (""). This
  * script (run automatically by .github/workflows/translate.yml on every
- * push) finds those empty fields, translates them with the free DeepL API,
+ * push) finds those empty fields, translates them with the TranslateAPI.ai API,
  * and writes the result back into the file.
  *
- * Requires the DEEPL_API_KEY secret (see README.md -> "Automatic translation").
- * Free DeepL accounts include 500,000 characters/month, which is far more
- * than a blog needs.
+ * Requires the TRANSLATEAPI_KEY secret (see README.md -> "Automatic translation").
+ * The free TranslateAPI.ai plan includes ~150,000 characters/month
+ * (5,000/day), which is plenty for a blog.
  */
 const fs = require("fs");
 const path = require("path");
-const { translateText } = require("./lib/deepl");
+const { translateText } = require("./lib/translateapi");
 
 const DATA_PATH = path.join(__dirname, "..", "data", "blog-posts.json");
-const API_KEY = process.env.DEEPL_API_KEY;
+const API_KEY = process.env.TRANSLATEAPI_KEY;
 
 async function translate(text) {
   return translateText(text, API_KEY);
@@ -24,7 +24,7 @@ async function translate(text) {
 
 async function main() {
   if (!API_KEY) {
-    console.log("No DEEPL_API_KEY set — skipping auto-translation.");
+    console.log("No TRANSLATEAPI_KEY set — skipping auto-translation.");
     return;
   }
 
@@ -35,8 +35,13 @@ async function main() {
     for (const field of ["title", "excerpt", "tag"]) {
       if (post[field] && post[field].en && !post[field].ua) {
         console.log(`Translating "${field}" for post dated ${post.date}...`);
-        post[field].ua = await translate(post[field].en);
-        changed = true;
+        try {
+          post[field].ua = await translate(post[field].en);
+          changed = true;
+        } catch (err) {
+          // Leave the field empty so the next run retries it.
+          console.log(`::warning::Could not translate "${field}" (${post.date}): ${err.message}`);
+        }
       }
     }
   }
