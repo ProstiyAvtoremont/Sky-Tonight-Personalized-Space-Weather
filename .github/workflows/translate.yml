@@ -1,7 +1,7 @@
 name: Auto-translate blog posts
 
 # Runs whenever blog-posts.json changes on main. Finds any post with an
-# empty "ua" field, translates it from English with the free DeepL API,
+# empty "ua" field, translates it from English with the TranslateAPI.ai API,
 # and commits the result back — so you only ever have to write posts in
 # English (or Ukrainian) and the other language fills itself in.
 
@@ -27,7 +27,7 @@ jobs:
 
       - name: Run translation script
         env:
-          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+          TRANSLATEAPI_KEY: ${{ secrets.TRANSLATEAPI_KEY }}
         run: node scripts/translate.js
 
       - name: Commit translated content
