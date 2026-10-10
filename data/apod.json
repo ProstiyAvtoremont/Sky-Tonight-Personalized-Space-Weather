@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-09",
-  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/PSP_007769_9010_IRB_Stickney.jpg?w=1836&h=1362&fit=clip&crop=faces%2Cfocalpoint",
+  "date": "2026-10-10",
+  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/farside_lro1600.jpg?w=1600&h=1600&fit=clip&crop=faces%2Cfocalpoint",
   "media_type": "image",
-  "source_url": "https://science.nasa.gov/image-article/apod-2026-october-9-stickney-crater/",
-  "credit": "HiRISE, MRO, LPL (U. Arizona), NASA",
+  "source_url": "https://science.nasa.gov/image-article/apod-2026-october-10-lunar-farside/",
+  "credit": "NASA / GSFC / Arizona State Univ. / Lunar Reconnaissance Orbiter",
   "title": {
-    "en": "Stickney Crater",
-    "ua": "Кратер \" Ріпні\" object name (optional)"
+    "en": "Lunar Farside",
+    "ua": "Лунар ФаркадCity in Germany"
   },
   "explanation": {
-    "en": "Stickney Crater, the largest crater on the martian moon Phobos, is named for Chloe Angeline Stickney Hall, mathematician and wife of astronomer Asaph Hall. Asaph Hall discovered both the Red Planet's moons in 1877. Over 9 kilometers across, Stickney is nearly half the diameter of Phobos itself, so large that the impact that blasted out the crater likely came close to shattering the tiny moon. This enhanced-color image of Stickney and surroundings was recorded by the HiRISE camera onboard the Mars Reconnaissance Orbiter as it passed within some six thousand kilometers of Phobos in March of 2008. Even though the surface gravity of asteroid-like Phobos is less than 1/1000th Earth's gravity, streaks suggest loose material slid down inside the crater walls over time. Light bluish regions near the crater's rim could indicate a relatively freshly exposed surface. The origin of the curious grooves along the surface is mysterious but may be related to tidal stresses experienced by close-orbiting Phobos or the crater-forming impact itself.Tomorrow's picture: farside",
-    "ua": "Корал \" Ріпні,\" найбільший кратер на Марсі місяця, називається \" Фобос,\" за назвою Хлої Анжеліна Пайнхні, математика і дружини астронома Асафа Гола. Асаф Холл відкрив обидва супутники червоної планети у 1877 році. Більше 9 кілометрів у діаметрі, \" Пло - це майже половина діаметра \" Фобоса, що настільки сильно вплинуло на кратер, що він, ймовірно, був майже зруйнований, розбив крихітний місяць. Це удосконалене кольорове зображення \" пір'я \" і оточення було зареєстроване камерою ГіРІЗЕ на борту Марса \" Орбітер, оскільки воно проходило близько шести тисяч кілометрів від Фобос у березні 2008 року. Хоча гравітація астероїдів, схожа на Фобо, менша за 1 / 00 Гринт Землі, задає, що не входило в стінах кратера. Світлові області можуть виявитися відносно свіжою поверхнею кратера. Походження цікавих жолобів вздовж поверхні загадкове, але може бути пов'язано з припливними стресами, які відчуваються через тісно-завершення Фобос або кратер-формування вплив сам на себе. З завтрашнім зображенням: далеко за межами"
+    "en": "Tidally locked in synchronous rotation, the Moon always presents its familiar nearside to denizens of planet Earth. From lunar orbit, the Moon's farside can become familiar, though. In fact this sharp picture, a mosaic from the Lunar Reconnaissance Orbiter's wide angle camera, is centered on the lunar farside. Part of a global mosaic of over 15,000 images acquired between November 2009 and February 2011, the highest resolution version shows features at a scale of 100 meters per pixel. Surprisingly, the rough and battered surface of the farside looks very different from the nearside covered with smooth dark lunar maria. A likely explanation is that the farside crust is thicker, making it harder for molten material from the interior to flow to the surface and form dark, smooth maria.Tomorrow's picture: Sunday's Childe",
+    "ua": "На відстані Місяця, замкненій у синхронному оберті, Місяць завжди показує свою звичну фотокамеру з широким кутом планети Земля. З місячної орбіти, далекий від Місяця, можна познайомитися. Фактично, ця гостра версія з найкращої роздільної здатності відображає можливості з шкали 100 метрів на піксель. На диво, груба і пошарована поверхня далекої сторони виглядає дуже відмінно від зовнішньої, покритої гладкою темною марією. Ймовірно, поясненням є те, що зовнішня кора є товстішою, що робить її більш розтопленою, зерною речовиною, що тече з поверхні до темної форми, а також у темну, у неділю."
   }
 }
