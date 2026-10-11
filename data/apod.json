@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-10",
-  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/farside_lro1600.jpg?w=1600&h=1600&fit=clip&crop=faces%2Cfocalpoint",
+  "date": "2026-10-11",
+  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/deephole_icecube_4000.jpg?w=0&h=0&fit=clip&crop=faces%2Cfocalpoint",
   "media_type": "image",
-  "source_url": "https://science.nasa.gov/image-article/apod-2026-october-10-lunar-farside/",
-  "credit": "NASA / GSFC / Arizona State Univ. / Lunar Reconnaissance Orbiter",
+  "source_url": "https://science.nasa.gov/image-article/apod-2026-october-11-ice-fishing-for-cosmic-neutrinos/",
+  "credit": "NSF, B. Gudbjartsson, IceCube Collaboration",
   "title": {
-    "en": "Lunar Farside",
-    "ua": "Лунар ФаркадCity in Germany"
+    "en": "Ice Fishing for Cosmic Neutrinos",
+    "ua": "Лопега для риболовлі в Космо - нейтрино."
   },
   "explanation": {
-    "en": "Tidally locked in synchronous rotation, the Moon always presents its familiar nearside to denizens of planet Earth. From lunar orbit, the Moon's farside can become familiar, though. In fact this sharp picture, a mosaic from the Lunar Reconnaissance Orbiter's wide angle camera, is centered on the lunar farside. Part of a global mosaic of over 15,000 images acquired between November 2009 and February 2011, the highest resolution version shows features at a scale of 100 meters per pixel. Surprisingly, the rough and battered surface of the farside looks very different from the nearside covered with smooth dark lunar maria. A likely explanation is that the farside crust is thicker, making it harder for molten material from the interior to flow to the surface and form dark, smooth maria.Tomorrow's picture: Sunday's Childe",
-    "ua": "На відстані Місяця, замкненій у синхронному оберті, Місяць завжди показує свою звичну фотокамеру з широким кутом планети Земля. З місячної орбіти, далекий від Місяця, можна познайомитися. Фактично, ця гостра версія з найкращої роздільної здатності відображає можливості з шкали 100 метрів на піксель. На диво, груба і пошарована поверхня далекої сторони виглядає дуже відмінно від зовнішньої, покритої гладкою темною марією. Ймовірно, поясненням є те, що зовнішня кора є товстішою, що робить її більш розтопленою, зерною речовиною, що тече з поверхні до темної форми, а також у темну, у неділю."
+    "en": "Scientists are melting holes in the bottom of the world. In fact, almost 100 holes melted near the South Pole are now being used as an astronomical observatory. Astronomers with the IceCube Neutrino Observatory lowered a long string knotted with basketball-sized light detectors into each vertical lake. The water in each hole soon refreezes. The detectors attached to the strings are sensitive to blue light emitted in the surrounding clear ice. Such light results from fast-moving secondary particles liberated when high-energy neutrinos emitted by powerful processes out in the universe collide with ice molecules. IceCube has now detected many illuminating neutrinos. Pictured in 2010, one of the last of IceCube's detector strings is lowered into the freezing abyss, making IceCube the largest neutrino detector ever created. In recognition of unprecedented discoveries, it was announced earlier this week that a founding leader of the IceCube Collaboration will be awarded the Nobel Prize in Physics.Tomorrow's picture: Moons Planet",
+    "ua": "Науковці - це отвори, що тануть у нижній частині світу. Фактично, майже 100 ям, розплавлених поблизу Південного полюса, тепер використовують як астрономічну обсерваторію. Астрономи з обсерваторією IceCube знизили довгий вузол з в' язками, що були укриті м' ятками світлошукачів, які розташовуються у кожному вертикальному озері. Тепер у кожній ямі швидко перевищуються вода. Відкриті до струн, які під' єднані до блакитного світла, що випромінюється у зовнішній язиці, буде виявлено багато напівпрозорих нейтрино. Зображення такого світла, отриманого зі стеку, згорненого зі струнами, що швидко роздувають, коли високий нейтрино, робить IceCubneus ne найбільшим детектором, який коли- коли- небудь створив. На знак визнання безпрецедентних відкриттів, цього тижня було оголошено, що лідером компанії IceCube буде визнана Нобелівська премія фізики."
   }
 }
