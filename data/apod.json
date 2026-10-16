@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-15",
-  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/Manhattan%20Milkyway.jpg?w=2160&h=3840&fit=clip&crop=faces%2Cfocalpoint",
-  "media_type": "image",
-  "source_url": "https://science.nasa.gov/image-article/apod-2026-october-15-the-milky-way-over-manhattan/",
-  "credit": "Jason Kurth, Ty Buckley",
+  "date": "2026-10-16",
+  "image_url": "",
+  "media_type": "video",
+  "source_url": "https://science.nasa.gov/image-article/apod-2026-october-16-chasing-the-international-space-station/",
+  "credit": "Eric Holland",
   "title": {
-    "en": "The Milky Way over Manhattan",
-    "ua": "Чумацький Шлях над Манхеттеном"
+    "en": "Chasing the International Space Station",
+    "ua": "Перебування міжнародної космічної станції"
   },
   "explanation": {
-    "en": "The city lights outshine the stars in the City That Never Sleeps. Who would have thought that the Milky Way could be visible in this sky? This image was taken with a filter that blocks most visible light, capturing instead only light in the near-infrared region of the electromagnetic spectrum (with lower energy than visible light). The astrophotographer's clever setup blocks most of the light pollution from the city: old incandescent light bulbs and some neon lights are still bright in the near-infrared, but fluorescent and LED light bulbs are not. Of course, stars are also bright in the near-infrared! This image is a reminder that we all live under the same sky, and astronomy allows all of us to learn more about humanity's place in the Cosmos. Tomorrow's picture: Chasing the ISS",
-    "ua": "Міські вогні перевершують зірки міста, які ніколи не сплять. Хто б міг подумати, що Чумацький шлях можна побачити на цьому небі? Це зображення було зроблено фільтром, який блокує найяскравіше світло, натомість, перехоплює лише світло у близько- закритому діапазоні електромагнітного спектру (не менше енергії, ніж видиме світло). Атрофографи, які найкраще конструюють більшість світлових блоків міста: старі лампи- світла і деякі неонові лампи все ще світяться у близько- засвітленій області, але світлодіодні лампи світла - ні. Звичайно ж, зірки також яскраві у близько- заїжджому часі! Це зображення нагадує, що ми всі живемо під одним небом, а астрономія дозволяє нам дізнатися більше про місце у космосі. Завтра я намалюю Я КСС:"
+    "en": "Blasting into the predawn sky on Tuesday, October 13, a Falcon 9 rocket and Dragon spacecraft are headed for low Earth orbit in this stunning timelapse video captured from Indian Harbour Beach, Florida. Starting with a launch from Space Launch Complex 40 at Cape Canaveral Space Force Station, Falcon and Dragon are chasing the International Space Station on NASA's 35th Commercial Resupply Services mission. On cue, the space station itself enters the frame from the top. Almost 8 seconds into the 30 second timelapse. the bright streak of the ISS appears heading \"down\" toward the horizon. The first and second stages of the Falcon 9 are separating as the spectacular exhaust plume jellyfish grows, already catching the light of the rising Sun. The visible sequence of first stage boost back, re-entry, and landing burns begins around 20 seconds into the video. With the second stage following the ISS toward the distant horizon, the jellyfish plume continues to drift in the predawn sky, even after the successful first stage landing at planet Earth's Landing Zone 40.Tomorrow's picture: pixels in space",
+    "ua": "У вівторок 13 жовтня космічний корабель \" Сокола 9 \" і Дракона \" Скид 9 \" прямує до низької орбіти Землі у цьому приголомшливому відео, отриманому з Індійського Харбору, Флориди. Починаючи з запуску з космічного запуску, сформульованого 40 на станції мисі Канаверальні космічні сили, Фалько і Дракон наступають на Міжнародну космічну станцію на респуратованому полі НАСА місії. За допомогою ствердження, космічна станція заходить у блок з верхнього боку. Майже 8 секунд у 30 секунд, коли вона проходить через 30 секунд. Яскравий ряд ISS з' явиться \" вниз \" на горизонті. Перші і інші стадії Сокілсоку 9 відокремлюють, коли росте ефектний вихлопний зв' язок, який вже ловить світло сходу сонця. Видирання видимого етапу першої стадії знову піднімаючись, знову повертається до об' єкта і починає огоргаю навколо відео. З другим етапом, що проходить через МКС до далекого горизонту, дрейф продовжує дрейфувати у передніх небесах, навіть після успішного посадки на планету Зона приземлення 40. завтрашня картина: пікселі у просторі."
   }
 }
