@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-01",
-  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/MoonColors_Pace_960.jpg?w=960&h=991&fit=clip&crop=faces%2Cfocalpoint",
+  "date": "2026-11-02",
+  "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/MonsCloud_MarsExpress_1920.jpg?w=1920&h=1200&fit=clip&crop=faces%2Cfocalpoint",
   "media_type": "image",
-  "source_url": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
-  "credit": "Marcella Giulia Pace",
+  "source_url": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars/",
+  "credit": "ESA, DLR, FU Berlin; Processing & License: J. Cowart",
   "title": {
-    "en": "Colors of the Moon",
-    "ua": "Кольори Місяця"
+    "en": "A Long Cloud on Mars",
+    "ua": "Довга хмара на Марсі"
   },
   "explanation": {
-    "en": "What color is the Moon? It depends on the night -- and the time. Outside of the Earth's atmosphere, the dark Moon, which shines by reflected sunlight, appears a magnificently brown-tinged gray. The featured image highlights a collection of apparent colors of the full moon on Earth, documented by one astrophotographer over 10 years from different locations across Italy. A red- or yellow-colored moon usually indicates a moon seen near the horizon. There, some of the blue light has been scattered away by a long path through the Earth's atmosphere, sometimes laden with fine dust. A blue-colored moon is more rare and can indicate an atmosphere carrying larger dust particles. What created the purple moon is unclear -- it may be a combination of several effects. The last image captures the total lunar eclipse of 2018 July -- where the moon, in Earth's shadow, appeared a faint red -- due to light refracted through air around the Earth. Have you ever seen an unusually colorful Moon?Tomorrow's picture: open space",
-    "ua": "Який колір має Місяць? Він залежить від ночі - і часу. Поза межами земної атмосфери, темного Місяця, який світить від від відбиття сонячного світла, виглядає надзвичайно коричнево- коричнево- світлого кольору. Накреслене зображення відображає набір видимих кольорів повного місяця на Землі, за документами одного атрофограми, що понад 10 років від різних місць Італії. Червоний або жовтокольоровий місяць зазвичай позначає місяць, який видно біля горизонту. Там деякі з синіх світил розкидані довгим шляхом крізь земну атмосферу, іноді натягнений пилом. Синєвий місяць є рідкішим і може вказувати на атмосферу, що несе більші частинки пилу. Невідомим є те, що саме, що і є, може бути поєднанням декількох ефектів. Останнє зображення відображає повне місячне затемнення 2018 липня, де місяць, у тіні Землі, з' явився тьмяним червоним, через заломлення світла повітрям навколо Землі. Чи бачили ви коли- небудь незвичайно кольоровий місяць? З завтрашнім зображенням: відкритий простір?"
+    "en": "What’s causing this unusually long cloud on Mars? Known as the Arsia Mons Elongated Cloud (AMEC) and first recorded by NASA’s Viking Orbiter 2 in 1977, the strange cloud has been imaged in greater detail more recently by ESA’s robotic Mars Express spacecraft. The featured image is from 2018. The cloud forms only during spring and summer seasons and then only during morning hours. Made of water-ice, the most familiar process that causes cloud crystals to form around bits of dust would fail due to the thinness and lack of dust high in the Martian atmosphere. Leading speculation holds that dust is not involved. After the cloud forms near the volcano Arsia Mons, wind blows the cloud downstream — creating a tail that can extend over 1500 kilometers. Efforts to better understand AMECs will continue, an understanding that may bolster a more complete view of cloud formation on Earth.Tomorrow's picture: eyeing a cat",
+    "ua": "Що ж робить ця надзвичайно довга хмара на Марсі? Відома як космічна станція Арсіа Монс Елонгід (МАР) і вперше записана НАСА Venters Orbiter 2 у 1977 році, дивну хмару було більш детально зображено у космічному апараті ESA} Виступ із застосуванням зображення з 2018 року. Хмара формується лише протягом весни і літнього періоду, а потім лише у ранкові години. Створено хмару, найбільш відомий процес, який спричиняє утворення кристалів хмари навколо шматків пилу, не дасть результату через тонку і відсутність пилу в марсіанському середовищі. Головальне припущення містить у собі уявлення про те, що пил не залучений до обриси. Після хмарної форми біля вулкана Арсіа Монс, вітер вириває хмару з дна, яка може простягатися на 1500 кілометрів."
   }
 }
